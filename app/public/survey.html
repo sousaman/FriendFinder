@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-danger text-light">
+    <div class="container">
+        <div class="jumbotron bg-dark">
+            <h2>FriendFinder</h2>
+            <hr>
+            <h3>
+                <strong>Detailed Description</strong>
+            </h3>
+            <h4>Moniker (Mandatory)</h4>
+            <input type="text" id="name" class="form-control freeForm">
+
+            <h4>Link to Likeness (Imperative)</h4>
+            <input type="text" id="photo" class="form-control freeForm">
+
+            <h3>
+                <strong>Question 1</strong>
+            </h3>
+            <h4>The sea has perpetually permeated my psyche with perplexity.</h4>
+            <select class="chosen-select bg-dark" id="q1">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 2</strong>
+            </h3>
+            <h4>'Tis a thin tracing 'tween brilliance and madness.</h4>
+            <select class="chosen-select bg-dark" id="q2">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+
+            <h3>
+                <strong>Question 3</strong>
+            </h3>
+            <h4>Attitude affects how adequate all are at attacking problems.</h4>
+            <select class="chosen-select bg-dark" id="q3">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+
+            <h3>
+                <strong>Question 4</strong>
+            </h3>
+            <h4>The absence of evidence is not the evidence of absence.</h4>
+            <select class="chosen-select bg-dark" id="q4">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+
+            <h3>
+                <strong>Question 5</strong>
+            </h3>
+            <h4>Buffalo buffalo, Buffalo buffalo buffalo, buffalo Buffalo buffalo.</h4>
+            <select class="chosen-select bg-dark" id="q5">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+
+            <h3>
+                <strong>Question 6</strong>
+            </h3>
+            <h4>A ship is alway safe at shore, but that's not what it's built for.</h4>
+            <select class="chosen-select bg-dark" id="q6">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+
+            <h3>
+                <strong>Question 7</strong>
+            </h3>
+            <h4>Roses are red. Rum is good. Poems are hard. Rum is good.</h4>
+            <select class="chosen-select bg-dark" id="q7">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 8</strong>
+            </h3>
+            <h4>Crazy people don't know they're crazy. I know I'm crazy; therefore, I'm not crazy.</h4>
+            <select class="chosen-select bg-dark" id="q8">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 9</strong>
+            </h3>
+            <h4>Why fight when you can negotiate?</h4>
+            <select class="chosen-select bg-dark" id="q9">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 10</strong>
+            </h3>
+            <h4>Too. Much. Alliteration.</h4>
+            <select class="chosen-select bg-dark" id="q10">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <button type="submit" class="btn btn-danger" id="submit">Submit</button>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a class="text-dark" href="/api/friends">API Friends</a> |
+                    <a class="text-dark" href="https://github.com/sousaman/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+        <div id="results" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-dark modal-title">
+                            <strong>Your Fiery Friend!</strong>
+                        </h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchPic" class="img-fluid" alt="Fiery Friend!">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fin!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="error" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-dark modal-title">
+                            <strong>Moniker and Link to Likeness must be populated!</strong>
+                        </h2>
+                    </div>
+                    <div class="modal-body text-danger">
+                        <h2>Moniker and Link to Likeness must be populated</h2>
+                        <img class="img-fluid" src="https://media1.tenor.com/images/be2213dede1361c1b8071f72023d633b/tenor.gif?itemid=5073187" alt="Soiled It!">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fin!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            // On click of the submit button
+            $("#submit").on("click", function (event) {
+
+                // Prevent default action of the form
+                event.preventDefault();
+
+                if (!$("#name").val() || !$("#photo").val()) {
+                    $("#error").modal("toggle");
+                }
+
+                else {
+
+                    // Saving new friend
+                    var newFriend = {
+                        name: $("#name").val().trim(),
+                        photo: $("#photo").val().trim(),
+                        scores: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
+                        ]
+                    };
+
+                    // Post the new friend to the friends array
+                    $.post("/api/friends", newFriend, function (data) {
+
+                        // Post call will return the matching friend and output in a modal
+                        $("#matchName").attr("class", "text-dark");
+                        $("#matchName").text(data.name);
+                        $("#matchPic").attr("src", data.photo);
+                        $("#results").modal("toggle");
+
+                        // Clearing out the form
+                        $("#name").val("");
+                        $("#photo").val("");
+                    });
+                }
+            })
+        </script>
+
+</body>
+
+
+</html>
