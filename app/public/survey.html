@@ -175,7 +175,9 @@
                         </h2>
                     </div>
                     <div class="modal-body">
-                        <h2 id="matchName"></h2>
+                        <br>
+                        <h2 id="matchName" class="text-dark"></h2>
+                        <hr>
                         <img id="matchPic" class="img-fluid" alt="Fiery Friend!">
                     </div>
                     <div class="modal-footer">
@@ -239,7 +241,6 @@
                     $.post("/api/friends", newFriend, function (data) {
 
                         // Post call will return the matching friend and output in a modal
-                        $("#matchName").attr("class", "text-dark");
                         $("#matchName").text(data.name);
                         $("#matchPic").attr("src", data.photo);
                         $("#results").modal("toggle");
