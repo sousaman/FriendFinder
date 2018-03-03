@@ -26,8 +26,12 @@ module.exports = function (app) {
             // Subtract all the corresponding values in the arrays
             var arrayDiff = currArray.map(function (currArrVal, index) {
 
+                var mapCurrArray = friends[i];
+                var mapScores = mapCurrArray["scores[]"];
+                var mapNumber = mapScores[index];
+
                 // Calculates the absolute value of the difference between the current index in the arrays
-                var newNumber = Math.abs(parseInt(currArrVal) - parseInt(friends[i].scores[index]));
+                var newNumber = Math.abs(parseInt(currArrVal) - parseInt(mapNumber));
 
                 // Returns a the absolute value calculated
                 return newNumber;
