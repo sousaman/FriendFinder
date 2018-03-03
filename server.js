@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 
 // Initializing express and establishing the port the listener will use
 var app = express();
-var PORT = process.argv.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 // Establishing the bodyparser middleware to help parse json
 app.use(bodyParser.urlencoded({ extended: false }));
